@@ -1,0 +1,6 @@
+@mixin marge-extérieure($top,$right,$bottom,$left) { 
+    margin: $top $right $bottom $left;
+}
+@mixin marge-haut($top : 0) { 
+    margin-top: $top;
+}

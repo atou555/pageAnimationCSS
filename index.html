@@ -4,65 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/scss/style-index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <img src="" alt="" >
-        <p>Paris,Belleville</p>
+        <div>
+            <img src="images/logo/ohmyfood.png" alt="" >
+        </div>
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Paris,Belleville</p>
+        </div>
+        
         <div>
             <h1>Réserver le menu qui vous convient</h1>
             <p>Découvrer des restaurants d'exception, séléctionnés par nos soins.</p>
             <button>Explorer nos restaurants</button>
         </div>
     </header>
-    <div class="sec1">
-        <h2>Fonctionnement</h2>
-        <div>
-            <i></i>
-            <h3>Choississez un restaurant</h3>
+    <main>
+        <div class="sec1">
+            <h2>Fonctionnement</h2>
+            <div class="categorie-restaurant">
+                <div class="process-number">1</div>
+                <div class="process-icon" ><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <h3>Choississez un restaurant</h3>
+            </div>
+            <div class="categorie-restaurant">
+                <div class="process-number">2</div>
+                <div class="process-icon" ><i class="fa-solid fa-list"></i></div>
+                <h3>Composez votre menu</h3>
+            </div>
+            <div class="categorie-restaurant">
+                <div class="process-number">3</div>
+                <div class="process-icon" ><i class="fa-solid fa-store"></i></div>
+                <h3>Déguster au restaurant</h3>
+            </div> 
         </div>
-        <div>
-            <i></i>
-            <h3>Composez votre menu</h3>
-        </div>
-        <div>
-            <i></i>
-            <h3>Déguster au restaurant</h3>
-        </div> 
-    </div>
-    <div class="sec2">
-        <h2>Restaurants</h2>
-        <div>
+        <div class="sec2">
+            <h2>Restaurants</h2>
             <div>
-                <img src="" alt="">
-                <button></button>
-                <p>La palette du goût</p>
-                <p>Ménilmontant</p>
-                <i></i>
-
-            </div>
-            <div>
-                <img src="" alt="">
-                <button></button>
-                <p>La note enchantée</p>
-                <p>Charonne</p>
-                <i></i>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>À la française</p>
-                <p>Cité Rouge</p>
-                <i></i>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>Le délices des sens</p>
-                <p>Folie-Méricourt</p>
-                <i></i>
+                <div class="restaurant-card">
+                    <img src="images/restaurants/restaurant1.jpg" class="image" alt="">
+                    <button class="restaurant-card-new">Nouveau</button>
+                    <p>La palette du goût</p>
+                    <p>Ménilmontant</p>
+                    <i></i>
+    
+                </div>
+                <div class="restaurant-card">
+                    <img src="images/restaurants/restaurant2.jpg" class="image" alt="">
+                    <button class="restaurant-card-new">Nouveau</button>
+                    <p>La note enchantée</p>
+                    <p>Charonne</p>
+                    <i></i>
+                </div>
+                <div class="restaurant-card">
+                    <img src="images/restaurants/restaurant3.jpg" class="image" alt="">
+                    <p>À la française</p>
+                    <p>Cité Rouge</p>
+                    <i></i>
+                </div>
+                <div class="restaurant-card">
+                    <img src="images/restaurants/restaurant4.jpg" class="image" alt="">
+                    <p>Le délices des sens</p>
+                    <p>Folie-Méricourt</p>
+                    <i></i>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+    
     <footer>
         <img src="" alt="">
         <div>
