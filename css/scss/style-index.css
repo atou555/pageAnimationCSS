@@ -15,10 +15,11 @@
   }
   header div:first-child {
     box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
-    height: 57px;
+    height: 64px;
   }
   header div:first-child img {
     width: 40%;
+    margin-top: 18px;
   }
   header div:nth-child(2) {
     display: flex;
@@ -27,13 +28,13 @@
     background-color: #EAEAEA;
     color: #7a7a7a;
     margin-top: 5px;
+    height: 49px;
   }
   header div:nth-child(2) p {
     text-align: center;
   }
   header div:nth-child(3) {
     background-color: #F6F6F6;
-    margin-top: -17px;
     height: 240px;
   }
   header div:nth-child(3) h1 {
@@ -45,6 +46,7 @@
   }
   header div:nth-child(3) p {
     text-align: center;
+    margin: 15px 20px;
   }
   header div:nth-child(3) button {
     margin: 0 auto;
@@ -89,7 +91,7 @@
     flex-direction: column;
   }
   .sec2 {
-    margin: 0;
+    margin-top: 52px;
     background: #f6f6f6;
     padding: 20px;
     max-width: 1200px;
@@ -100,23 +102,54 @@
     align-items: flex-start;
   }
   .image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 177px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
   }
   .restaurant-card {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    width: 100%;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    width: 332px;
     border-radius: 20px;
     transform: scale(1);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   }
-  restaurant-card-new {
+  .restaurant-card-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: #99e2d0;
+    top: 14px;
+    right: 20px;
+    height: 29px;
+    width: 77px;
+    border: none;
+  }
+  .restaurant-card-new p {
     color: #1b6150;
     padding: 10px 20px;
     margin: 0;
+    font-weight: bold;
+  }
+  .fa-solid.fa-location-dot {
+    padding-right: 15px;
+  }
+  .sec1 h2 {
+    margin-top: 42px;
+    margin-left: 24px;
+  }
+  .restaurant-card h3 {
+    margin-left: 18px;
+  }
+  body > main > div.sec2 > div > div > p {
+    margin-top: -13px;
+    margin-left: 18px;
   }
 }/*# sourceMappingURL=style-index.css.map */
