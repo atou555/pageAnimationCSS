@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/scss/style-index.css">
+    <link rel="stylesheet" href="css/scss/style-loading.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -46,33 +50,42 @@
         <div class="sec2">
             <h2>Restaurants</h2>
             <div>
-                <div class="restaurant-card">
-                    <img src="images/restaurants/restaurant1.jpg" class="image" alt="">
-                    <button class="restaurant-card-new"><p>Nouveau</p></button>
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                    <i class="fa-regular fa-heart"></i>
-    
-                </div>
-                <div class="restaurant-card">
-                    <img src="images/restaurants/restaurant2.jpg" class="image" alt="">
-                    <button class="restaurant-card-new"><p>Nouveau</p></button>
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="restaurant-card">
-                    <img src="images/restaurants/restaurant3.jpg" class="image" alt="">
-                    <h3>À la française</h3>
-                    <p>Cité Rouge</p>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="restaurant-card">
-                    <img src="images/restaurants/restaurant4.jpg" class="image" alt="">
-                    <h3>Le délices des sens</h3>
-                    <p>Folie-Méricourt</p>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
+                <a href="pages-menu/la-palette-du-goût.html">
+                    <div class="restaurant-card">
+                        <img src="images/restaurants/restaurant1.jpg" class="image" alt="">
+                        <button class="restaurant-card-new"><p>Nouveau</p></button>
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                        <i class="fa-regular fa-heart"></i>
+        
+                    </div>
+                </a>
+                <a href="pages-menu/la-note-enchantée.html">
+                    <div class="restaurant-card">
+                        <img src="images/restaurants/restaurant2.jpg" class="image" alt="">
+                        <button class="restaurant-card-new"><p>Nouveau</p></button>
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
+                
+                <a href="pages-menu/a-la-francaise.html">
+                    <div class="restaurant-card">
+                        <img src="images/restaurants/restaurant3.jpg" class="image" alt="">
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
+                <a href="pages-menu/Le-délice-des-sens.html">
+                    <div class="restaurant-card">
+                        <img src="images/restaurants/restaurant4.jpg" class="image" alt="">
+                        <h3>Le délices des sens</h3>
+                        <p>Folie-Méricourt</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
             </div>
         </div>
     </main>
@@ -90,5 +103,15 @@
         <h4>Mentions légales</h4>
         <h4>Contact</h4>
     </footer>
+    <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </body>
 </html>

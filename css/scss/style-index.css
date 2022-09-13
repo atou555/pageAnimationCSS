@@ -1,201 +1,228 @@
-@media screen and (max-width: 460px) {
-  header div:first-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  header div:first-child img {
-    margin: 0 auto;
-  }
-  body {
-    font-family: "Roboto", sans-serif;
-    padding: 0;
-    margin: 0;
-  }
-  header div:first-child {
-    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
-    height: 64px;
-  }
-  header div:first-child img {
-    width: 40%;
-    margin-top: 18px;
-  }
-  header div:nth-child(2) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #EAEAEA;
-    color: #7a7a7a;
-    margin-top: 5px;
-    height: 49px;
-  }
-  header div:nth-child(2) p {
-    text-align: center;
-  }
-  header div:nth-child(3) {
-    background-color: #F6F6F6;
-    height: 240px;
-  }
-  header div:nth-child(3) h1 {
-    font-size: 24px;
-    text-align: center;
-    padding-top: 30px;
-    max-width: 250px;
-    margin: 0 auto;
-  }
-  header div:nth-child(3) p {
-    text-align: center;
-    margin: 15px 20px;
-  }
-  header div:nth-child(3) button {
-    margin: 0 auto;
-    display: flex;
-    opacity: 1;
-    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-    color: white;
-    padding: 0 20px;
-    height: 40px;
-    align-items: center;
-    border: none;
-    border-radius: 200px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  }
-  .categorie-restaurant {
-    background-color: #F6F6F6;
-    display: flex;
-    align-items: center;
-    background: #f6f6f6;
-    height: auto;
-    width: auto;
-    margin: 10px 20px;
-    border-radius: 20px;
-    position: relative;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
-  }
-  .process-number {
-    background-color: #9356DC;
-    color: white;
-    position: absolute;
-    padding: 3px 8px 3px 8px;
-    border-radius: 500px;
-    transform: translateX(-50%);
-  }
-  .process-icon {
-    color: #7E7E7E;
-    margin: 0 20px;
-  }
-  .sec1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .sec2 {
-    margin-top: 52px;
-    background: #f6f6f6;
-    padding: 20px;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .image {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 177px;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-  }
-  .restaurant-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    width: 332px;
-    border-radius: 20px;
-    transform: scale(1);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-    height: 240px;
-    margin: 36px 0 68px 0;
-  }
-  .restaurant-card-new {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background: #99e2d0;
-    top: 14px;
-    right: 20px;
-    height: 29px;
-    width: 77px;
-    border: none;
-  }
-  .restaurant-card-new p {
-    color: #1b6150;
-    padding: 10px 20px;
-    margin: 0;
-    font-weight: bold;
-  }
-  .fa-solid.fa-location-dot {
-    padding-right: 15px;
-  }
-  .sec1 h2 {
-    margin-top: 42px;
-    margin-left: 24px;
-  }
-  .restaurant-card h3 {
-    margin-left: 18px;
-  }
-  body > main > div.sec2 > div > div > p {
-    margin-top: -13px;
-    margin-left: 18px;
-  }
-  .restaurant-card i {
-    position: relative;
-    top: -55px;
-    left: 274px;
-    font-size: 27px;
-  }
-  footer {
-    background-color: #353535;
-    height: 176px;
-    color: white;
-  }
-  footer svg {
-    color: white;
-  }
-  footer img {
-    width: 26%;
-    padding: 21px 0 0 21px;
-  }
-  footer div {
-    display: flex;
-    align-items: center;
-  }
-  body > footer > div:nth-child(2) > i {
-    font-size: 10px;
-    padding-right: 11px;
-    margin-left: 20px;
-  }
-  body > footer > div:nth-child(3) > i {
-    font-size: 10px;
-    padding-right: 5px;
-    margin-left: 20px;
-  }
-  footer h4 {
-    font-size: 14px;
-  }
-  body > footer > div:nth-child(3) {
-    margin-top: -28px;
-  }
-  body > footer > h4:nth-child(4) {
-    margin: -12px 0 0px 19px;
-  }
-  body > footer > h4:nth-child(5) {
-    margin: 4px 0 0px 19px;
-  }
+header div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header div:first-child img {
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header div:first-child {
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+  height: 64px;
+}
+header div:first-child img {
+  width: 40%;
+  margin-top: 18px;
+}
+header div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  color: #7a7a7a;
+  margin-top: 5px;
+  height: 49px;
+}
+header div:nth-child(2) p {
+  text-align: center;
+}
+
+header div:nth-child(3) {
+  background-color: #F6F6F6;
+  height: 240px;
+}
+header div:nth-child(3) h1 {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 30px;
+  max-width: 250px;
+  margin: 0 auto;
+}
+header div:nth-child(3) p {
+  text-align: center;
+  margin: 15px 20px;
+}
+header div:nth-child(3) button {
+  margin: 0 auto;
+  display: flex;
+  opacity: 1;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  color: white;
+  padding: 0 20px;
+  height: 40px;
+  align-items: center;
+  border: none;
+  border-radius: 200px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.categorie-restaurant {
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  background: #f6f6f6;
+  height: auto;
+  width: auto;
+  margin: 10px 20px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+.process-number {
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  padding: 3px 8px 3px 8px;
+  border-radius: 500px;
+  transform: translateX(-50%);
+}
+
+.process-icon {
+  color: #7E7E7E;
+  margin: 0 20px;
+}
+
+.sec1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sec2 {
+  margin-top: 52px;
+  background: #f6f6f6;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 177px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.restaurant-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  width: 318px;
+  border-radius: 20px;
+  transform: scale(1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  height: 240px;
+  margin: 36px 0 68px 0;
+}
+
+.restaurant-card-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: #99e2d0;
+  top: 14px;
+  right: 20px;
+  height: 29px;
+  width: 77px;
+  border: none;
+}
+
+.restaurant-card-new p {
+  color: #1b6150;
+  padding: 10px 20px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.fa-solid.fa-location-dot {
+  padding-right: 15px;
+}
+
+.sec1 h2 {
+  margin-top: 42px;
+  margin-left: 24px;
+}
+
+.restaurant-card h3 {
+  margin-left: 18px;
+}
+
+body > main > div.sec2 > div > div > p {
+  margin-top: -13px;
+  margin-left: 18px;
+}
+
+.restaurant-card i {
+  width: 2px;
+  position: relative;
+  top: -55px;
+  left: 274px;
+  font-size: 27px;
+}
+
+footer {
+  margin-top: 0;
+  background-color: #353535;
+  height: 176px;
+  color: white;
+}
+
+footer svg {
+  color: white;
+}
+
+footer img {
+  width: 26%;
+  padding: 21px 0 0 21px;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+}
+
+body > footer > div:nth-child(2) > i {
+  font-size: 10px;
+  padding-right: 11px;
+  margin-left: 20px;
+}
+
+body > footer > div:nth-child(3) > i {
+  font-size: 10px;
+  padding-right: 5px;
+  margin-left: 20px;
+}
+
+footer h4 {
+  font-size: 14px;
+}
+
+body > footer > div:nth-child(3) {
+  margin-top: -28px;
+}
+
+body > footer > h4:nth-child(4) {
+  margin: -12px 0 0px 19px;
+}
+
+body > footer > h4:nth-child(5) {
+  margin: 4px 0 0px 19px;
 }/*# sourceMappingURL=style-index.css.map */
