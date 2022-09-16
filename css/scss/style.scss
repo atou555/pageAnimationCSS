@@ -2,45 +2,98 @@
 @import './_mixins';
 @import './_placeholders';
 
-// LOADING SPINNER
-.lds-dual-ring {
-display: flex;
-height: 100%;
-justify-content: center;
-align-items: center;
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: 20;
- 
-}
-.lds-dual-ring:after {
-  content: " ";
-  display: block;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border-radius: 50%;
-  border: 6px solid violet;
-  border-color: violet transparent #fff transparent;
-  animation: lds-dual-ring 1.2s linear infinite;
-  z-index: 10;
-  
-  
-}
-@keyframes lds-dual-ring {
-  0% {
-    visibility: visible;
-    transform: rotate(0deg);
-  }
-  100% {
-    visibility: hidden;
-    transform: rotate(360deg);
-  }
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+@mixin button-hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);    
+}
+
+@mixin button-style {
+    opacity: 1;
+    background: $gradient;
+    color: white;
+    padding: 0 20px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);  
+}
+
+$color-primary: #b997e3;
+$color-secondary: rgb(105, 16, 105);
+
+$color-tertiary: #31957c;
+$gradient : linear-gradient(180deg, rgb(117, 44, 96) 0%, rgb(140, 116, 170) 100%);
+
+// LOADING SPINNER
+.spinner {
+    height: 100%;
+    background: white;
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 20;
+    animation: spinner 2s linear ;
+    visibility: hidden;
+    &__border {
+        @include flexbox-center;
+        border: 10px solid transparent;
+        border-top: 10px solid $color-primary;
+        border-bottom: 10px solid $color-secondary;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        animation: spinner-border 2s linear ;
+        z-index: 10;
+        visibility: hidden;
+    }
+    &__center {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $color-tertiary;
+    
+    }
+}
+
+// Animation Loading spinner //
+
+@keyframes spinner {
+    0% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    70% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes spinner-border {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 //   ACCUEIL
 body{
     font-family: 'Roboto', sans-serif;
@@ -243,7 +296,7 @@ body > main > div.sec2 > div > div > p{
 .restaurant-card i {
     width: 2px;
     position: relative;
-    top: -55px;
+    top: -41px;
     left: 274px;
     font-size: 27px;
 }
@@ -286,6 +339,25 @@ body > footer > h4:nth-child(4){
 body > footer > h4:nth-child(5){
     margin: 4px 0 0px 19px;
 }
+body > main > div.sec2 > div > a {
+    text-decoration: none;
+    color: black;
+}
+body > main > div.sec2 > div > a > div > p {
+    margin: -14px 0 0 18px;
+}
+
+i.fa-regular.fa-heart{
+    width: 2px;
+    position: relative;
+    top: -41px;
+    left: 274px;
+    font-size: 27px;
+}
+i.fa-regular.fa-heart :hover{
+    background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    border: none;
+}
 
 // LES MENUS
 .image-1{
@@ -304,13 +376,7 @@ body > footer > h4:nth-child(5){
     font-weight: bold;
    
 }
-i.fa-regular.fa-heart{
-    width: 2px;
-    position: relative;
-    top: -55px;
-    left: 274px;
-    font-size: 27px;
-}
+
 @media screen and (min-width:460px) {
 
 

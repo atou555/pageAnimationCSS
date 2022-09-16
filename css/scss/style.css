@@ -9,52 +9,101 @@ header div:first-child img {
   margin: 0 auto;
 }
 
-.lds-dual-ring {
-  display: flex;
+.spinner {
   height: 100%;
-  justify-content: center;
-  align-items: center;
+  background: white;
+  margin: auto;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 20;
+  -webkit-animation: spinner 2s linear;
+          animation: spinner 2s linear;
+  visibility: hidden;
 }
-
-.lds-dual-ring:after {
-  content: " ";
-  display: block;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
+.spinner__border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid transparent;
+  border-top: 10px solid #b997e3;
+  border-bottom: 10px solid rgb(105, 16, 105);
   border-radius: 50%;
-  border: 6px solid violet;
-  border-color: violet transparent #fff transparent;
-  -webkit-animation: lds-dual-ring 1.2s linear infinite;
-          animation: lds-dual-ring 1.2s linear infinite;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: spinner-border 2s linear;
+          animation: spinner-border 2s linear;
   z-index: 10;
+  visibility: hidden;
+}
+.spinner__center {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #31957c;
 }
 
-@-webkit-keyframes lds-dual-ring {
+@-webkit-keyframes spinner {
   0% {
     visibility: visible;
-    transform: rotate(0deg);
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
   }
   100% {
+    opacity: 0;
     visibility: hidden;
-    transform: rotate(360deg);
   }
 }
 
-@keyframes lds-dual-ring {
+@keyframes spinner {
   0% {
     visibility: visible;
-    transform: rotate(0deg);
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
   }
   100% {
+    opacity: 0;
     visibility: hidden;
+  }
+}
+@-webkit-keyframes spinner-border {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
     transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes spinner-border {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
   }
 }
 body {
@@ -221,7 +270,7 @@ body > main > div.sec2 > div > div > p {
 .restaurant-card i {
   width: 2px;
   position: relative;
-  top: -55px;
+  top: -41px;
   left: 274px;
   font-size: 27px;
 }
@@ -275,6 +324,28 @@ body > footer > h4:nth-child(5) {
   margin: 4px 0 0px 19px;
 }
 
+body > main > div.sec2 > div > a {
+  text-decoration: none;
+  color: black;
+}
+
+body > main > div.sec2 > div > a > div > p {
+  margin: -14px 0 0 18px;
+}
+
+i.fa-regular.fa-heart {
+  width: 2px;
+  position: relative;
+  top: -41px;
+  left: 274px;
+  font-size: 27px;
+}
+
+i.fa-regular.fa-heart :hover {
+  background: linear-gradient(180deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  border: none;
+}
+
 .image-1 {
   width: 100%;
   height: 38vh;
@@ -291,12 +362,4 @@ body > footer > h4:nth-child(5) {
   font-family: "Shrikhand", cursive;
   font-size: 24px;
   font-weight: bold;
-}
-
-i.fa-regular.fa-heart {
-  width: 2px;
-  position: relative;
-  top: -55px;
-  left: 274px;
-  font-size: 27px;
 }/*# sourceMappingURL=style.css.map */
