@@ -2,34 +2,6 @@
 @import './_mixins';
 @import './_placeholders';
 
-@mixin flexbox-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin button-hover {
-    opacity: 0.8;
-    cursor: pointer;
-    transition: .3s;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);    
-}
-
-@mixin button-style {
-    opacity: 1;
-    background: $gradient;
-    color: white;
-    padding: 0 20px;
-    border-radius: 200px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);  
-}
-
-$color-primary: #b997e3;
-$color-secondary: rgb(105, 16, 105);
-
-$color-tertiary: #31957c;
-$gradient : linear-gradient(180deg, rgb(117, 44, 96) 0%, rgb(140, 116, 170) 100%);
-
 // LOADING SPINNER
 .spinner {
     height: 100%;
@@ -159,6 +131,9 @@ header{
             border-radius: 200px;
             box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
         }
+        button:hover{
+            @include button-hover;
+        }
     }
 }
 
@@ -179,6 +154,10 @@ header{
     -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
 
+}
+.categorie-restaurant:hover{
+    @include button-hover;
+    background: lighten(#f7f7f7, 3%);
 }
 .process-number{
     background-color: #9356DC;
@@ -231,6 +210,7 @@ header{
     height: 177px;
     width: 100%;
     border-radius: 20px 20px 0 0;
+    margin-top: -25px;
 }
 .restaurant-card{
     position: relative;
@@ -252,7 +232,7 @@ header{
     transform: scale(1);
     -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
-    height: 240px;
+    height: 268px;
     margin: 36px 0 68px 0;
 }
 .restaurant-card-new{
@@ -354,9 +334,44 @@ i.fa-regular.fa-heart{
     left: 274px;
     font-size: 27px;
 }
-i.fa-regular.fa-heart :hover{
-    background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-    border: none;
+i.fa-regular.fa-heart{
+    width: 2px;
+    position: relative;
+    top: -41px;
+    left: 274px;
+    font-size: 27px;
+}
+
+.heart {
+    width: 30px;
+    stroke-width: 30;
+    stroke: black;
+    fill: white;
+    cursor: pointer;
+  }
+  .heart-full {
+    position: absolute;
+    top: 194px;
+    left: 273px;
+    fill: url(#text-fill);
+    stroke: none;
+}
+.heart-empty {
+    width: 30px;
+    position: absolute; 
+    top: 194px;
+    left: 273px;
+    &:hover {
+      opacity: 0;
+      transition: 0.5s;
+    }
+}
+
+.sec2 div:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: ease 0.4s;
+
 }
 
 // LES MENUS
@@ -370,11 +385,45 @@ i.fa-regular.fa-heart :hover{
     display: flex;
     margin: 0 auto;
 }
-.sec1 h1 {
-    font-family:'Shrikhand', cursive;
-    font-size: 24px;
-    font-weight: bold;
-   
+.menu__sec1{
+    padding: 0 20px;
+    width: 90%;
+    max-width: 1230px;
+    border-radius: 30px 30px 0 0;
+    background-color: $gris-blocs;
+    position: relative;
+    top: -135px;
+    & h1 {
+        font-family:'Shrikhand', cursive;
+        font-size: 24px;
+        font-weight: bold;
+        position: relative;
+        top: 22px;
+    }   
+}
+.heart {
+    width: 30px;
+    stroke-width: 30;
+    stroke: black;
+    fill: white;
+    cursor: pointer;
+  }
+  .heart-full-2 {
+    position: absolute;
+    top: 24px;
+    left: 316px;
+    fill: url(#text-fill);
+    stroke: none;
+}
+.heart-empty-2 {
+    width: 30px;
+    position: absolute; 
+    top: 24px;
+    left: 316px;
+    &:hover {
+      opacity: 0;
+      transition: 0.5s;
+    }
 }
 
 @media screen and (min-width:460px) {
