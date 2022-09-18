@@ -451,4 +451,90 @@ i.fa-regular.fa-heart {
 .heart-empty-2:hover {
   opacity: 0;
   transition: 0.5s;
+}
+
+.menu__sec1 h2:nth-child(2) {
+  margin-top: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+.menu__sec1 h2:nth-child(2)::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #99e2d0;
+  position: absolute;
+  z-index: 20;
+  top: 108px;
+  left: 21px;
+  bottom: -8px;
+}
+
+.menu__case__dish {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 409px;
+  height: 70px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+.menu__case__dish p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__case__dish-title {
+  font-weight: bold;
+}
+.menu__case__price {
+  position: relative;
+  left: -56px;
+  padding-right: 20px;
+  font-weight: bold;
+  padding-left: 7px;
+}
+
+div.menu__case__dish-title > p {
+  position: relative;
+  top: 19px;
+  left: -78px;
+}
+
+div.menu__case__dish-subtitle > p {
+  position: relative;
+  top: -12px;
+  left: -75px;
+}
+
+body > div > div:nth-child(4) > div.menu__case__dish > div.menu__case__dish-title > p {
+  left: -54px;
+}
+
+body > div > div:nth-child(4) > div.menu__case__dish > div.menu__case__dish-subtitle > p {
+  left: -47px;
+}
+
+body > div > div:nth-child(5) > div.menu__case__dish > div.menu__case__dish-title > p {
+  left: -109px;
+}
+
+body > div > div:nth-child(5) > div.menu__case__dish > div.menu__case__dish-subtitle > p {
+  left: -19px;
+}
+
+.dish-and-price {
+  width: 395px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
