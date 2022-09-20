@@ -73,6 +73,7 @@ body{
     margin: 0;
 }
 
+
 header{
     div:first-child{
         @extend %flexbox-aligner-centrer;
@@ -280,12 +281,13 @@ body > main > div.sec2 > div > div > p{
     left: 274px;
     font-size: 27px;
 }
-footer{
-    margin-top: 0;
+#footer{
+    margin-top: 0px;
     background-color: #353535;
     height: 176px;
     color : white;
 }
+
 footer svg{
     color:white
 }
@@ -386,6 +388,7 @@ i.fa-regular.fa-heart{
     margin: 0 auto;
 }
 .menu__sec1{
+    height:1218px;
     padding: 0 20px;
     width: 90%;
     max-width: 1230px;
@@ -442,7 +445,40 @@ i.fa-regular.fa-heart{
         bottom: -8px;
     }          
 }
-
+body > div > h2:nth-child(6) {
+    margin-top: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 19px;
+    &::after {
+        content: '';
+        width: 50px;
+        height: 4px;
+        background: #99e2d0;
+        position: absolute;
+        z-index: 20;
+        top: 448px;
+        left: 21px;
+        bottom: -8px;
+    }          
+}
+body > div > h2:nth-child(10) {
+    margin-top: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 19px;
+    &::after {
+        content: '';
+        width: 50px;
+        height: 4px;
+        background: #99e2d0;
+        position: absolute;
+        z-index: 20;
+        top: 790px;
+        left: 21px;
+        bottom: -8px;
+    }          
+}
 .menu{
     &__case {
         &__dish {
@@ -479,36 +515,45 @@ i.fa-regular.fa-heart{
         }
     }
 }
-div.menu__case__dish-title > p{
-    position: relative;
+div.menu__case__dish-title > p {
+    position: absolute;
     top: 19px;
-    left: -78px;
+    left: 17px;
 }
 div.menu__case__dish-subtitle > p{
-    position: relative;
-    top: -12px;
-    left: -75px;
+    position: absolute;
+    top: 38px;
+    left: 17px;
 }
-body > div > div:nth-child(4) > div.menu__case__dish > div.menu__case__dish-title > p{
-    left: -54px;
-}
-body > div > div:nth-child(4) > div.menu__case__dish > div.menu__case__dish-subtitle > p{
-    left: -47px;
-    
-}
-body > div > div:nth-child(5) > div.menu__case__dish > div.menu__case__dish-title > p{
-    left: -109px;
-}
-body > div > div:nth-child(5) > div.menu__case__dish > div.menu__case__dish-subtitle > p{
-    left: -19px;
-    
-}
+
 .dish-and-price {
     width: 395px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top:20px ;
+}
+.menu{
+    &__contain-button {
+        @include flexbox-center;
+        width: 100%;
+    }
+    &__button {
+        @include button-style;
+        padding: 10px 20px;
+        margin: 30px 0;
+        font-size: 18px;
+        background:linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+        &:hover {
+            @include button-hover;
+        }
+    }
+}
+footer{
+    margin-top: -136px;
+    background-color: #353535;
+    height: 176px;
+    color : white;
 }
     
      
