@@ -706,4 +706,53 @@ footer {
 #case-9 {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
+}
+
+@media screen and (min-width: 800px) {
+  header div:first-child img {
+    width: 15%;
+    margin-top: 18px;
+  }
+  .sec1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "fonc fonc fonc" "restaurant-1 restaurant-2 restaurant-3";
+  }
+  .sec1 h2 {
+    grid-area: fonc;
+  }
+  #restaurant-1 {
+    grid-area: restaurant-1;
+  }
+  #restaurant-2 {
+    grid-area: restaurant-2;
+  }
+  #restaurant-3 {
+    grid-area: restaurant-3;
+  }
+  body > main > div.sec2 > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "restaurant-card-1 restaurant-card-2" "restaurant-card-3 restaurant-card-4";
+    justify-items: center;
+    grid-gap: 30px;
+    margin: auto;
+  }
+  #restaurant-card-1 {
+    grid-area: restaurant-card-1;
+  }
+  #restaurant-card-2 {
+    grid-area: restaurant-card-2;
+  }
+  #restaurant-card-3 {
+    grid-area: restaurant-card-3;
+  }
+  #restaurant-card-4 {
+    grid-area: restaurant-card-4;
+  }
+  .restaurant-card {
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
