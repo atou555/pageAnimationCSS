@@ -67,6 +67,15 @@
     }
 }
 //   ACCUEIL
+
+body > footer > a{
+    text-decoration: none;
+}
+body > footer > a > h4{
+    color:white;
+    margin-left: 17px;
+    margin-top: 7px;
+}
 body{
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -405,6 +414,7 @@ i.fa-regular.fa-heart{
 }
 body > header > a > i{
   margin-top: -9px;
+  font-size:20px;
 }
 .logo{
     width: 30%;
@@ -441,7 +451,7 @@ body > header > a > i{
   .heart-full-2 {
     position: absolute;
     top: 24px;
-    left: 316px;
+    left: 90%;
     fill: url(#text-fill);
     stroke: none;
 }
@@ -449,7 +459,7 @@ body > header > a > i{
     width: 30px;
     position: absolute; 
     top: 24px;
-    left: 316px;
+    left: 90%;
     &:hover {
       opacity: 0;
       transition: 0.5s;
@@ -606,8 +616,6 @@ footer{
 }
 .dish-and-price{
     animation: fadeInAnimation ease 10s; 
-    animation-fill-mode: forwards; 
-    animation-iteration-count: 1; 
 }
 @keyframes fadeInAnimation { 
     0% { 
@@ -664,12 +672,12 @@ footer{
         height: 70px;
         border-radius: 15px;
         margin-bottom: 21px;
-        &:active .validation__box {
+        &:hover .validation__box {
             @include flexbox-center;
-            animation: slide-left 0.5s ease;
+            animation: slide-left 0.5s ease ;
             transform-origin: right;
         }
-        &:active .menu__case__price {
+        &:hover .menu__case__price {
             animation: slides-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
         .validation__box {
@@ -677,7 +685,7 @@ footer{
             position: relative;
             background: $color-tertiary;
             border-radius: 0 15px 15px 0;
-            right: 8%;
+            right: 0px;
             padding: 0 13px;
             height: 100%;
             i {
@@ -710,7 +718,7 @@ footer{
               transform: scaleX(0);
     }
     100% {
-              transform: scaleX(-50);
+              transform: scaleX(-50px);
     }
   }
 
@@ -805,9 +813,15 @@ footer{
         grid-area: mention;
         margin: 0;
     }
-    #footer > h4:nth-child(5){
+    #footer > a > h4:nth-child(5){
         grid-area: contact;
         margin: 0;
+    }
+}
+
+@media screen and (min-width:464px) {
+    .logo {
+        width: 114px;
     }
 }
 
@@ -822,7 +836,7 @@ footer{
         color: black;
     }
     body > div > div:nth-child(1) > svg.heart.heart-full-2,body > div > div:nth-child(1) > svg.heart.heart-empty-2{
-        margin-left: 960px ;
+        margin-left: 73px;
     }
    
     
@@ -843,6 +857,8 @@ footer{
     }
     .menu__case__price{
         left: 88%;
+        margin-top: 10px;
+        font-size: 14px;
     }
     .menu__sec1{
         height: 566px;
@@ -931,7 +947,7 @@ footer{
         grid-area: mention;
         margin: 0;
     }
-    footer > h4:nth-child(5){
+    body > footer > a > h4{
         grid-area: contact;
         margin: 0;
     }
