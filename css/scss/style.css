@@ -134,11 +134,13 @@ header div:nth-child(2) {
   height: 49px;
 }
 header div:nth-child(2) input {
-  border: none;
+  width: 146px;
+  border-color: azure;
+  height: 25px;
   background-color: #EAEAEA;
   color: #7a7a7a;
   text-align: center;
-  width: 96px;
+  width: 139px;
 }
 
 header div:nth-child(3) {
@@ -237,6 +239,16 @@ header div:nth-child(3) button:hover {
   margin-top: -25px;
 }
 
+body > header > a > i {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 35px;
+  top: 23px;
+  font-size: 25px;
+  color: black;
+}
+
 .restaurant-card {
   position: relative;
   display: flex;
@@ -274,6 +286,8 @@ header div:nth-child(3) button:hover {
 
 .fa-solid.fa-location-dot {
   padding-right: 15px;
+  position: relative;
+  left: 38px;
 }
 
 .sec1 h2 {
@@ -406,12 +420,20 @@ i.fa-regular.fa-heart {
 }
 
 .image-1 {
+  height: 90vh;
+  margin-top: 0;
   width: 100%;
-  height: 38vh;
+  height: 309px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+body > header > a > i {
+  margin-top: -9px;
 }
 
 .logo {
-  width: 52%;
+  width: 30%;
   padding: 15px;
   display: flex;
   margin: 0 auto;
@@ -765,7 +787,7 @@ footer {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(-50px);
+    transform: scaleX(-50);
   }
 }
 @keyframes slide-left {
@@ -773,7 +795,7 @@ footer {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(-50px);
+    transform: scaleX(-50);
   }
 }
 @-webkit-keyframes slides-left {
@@ -876,22 +898,23 @@ footer {
     position: absolute;
     left: 35px;
     top: 23px;
-    font-size: 20px;
+    font-size: 25px;
+    color: black;
   }
   body > div > div:nth-child(1) > svg.heart.heart-full-2, body > div > div:nth-child(1) > svg.heart.heart-empty-2 {
-    margin-left: 889px;
+    margin-left: 960px;
   }
   .menu__grid__case .validation__box {
     display: none;
     position: absolute;
     background: #31957c;
     border-radius: 0 15px 15px 0;
-    right: 19%;
+    right: 4%;
     padding: 0 13px;
     height: 100%;
   }
   .dish-and-price {
-    width: 76%;
+    width: 91%;
   }
   .menu__grid__case {
     margin-bottom: 26px;

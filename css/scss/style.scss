@@ -100,11 +100,13 @@ header{
         @include marge-haut(5px);
         height: 49px;
         input{
-            border: none;
+            width: 146px;
+            border-color: azure;
+            height: 25px;
             background-color: #EAEAEA;
             color: #7a7a7a;
             text-align: center;
-            width: 96px;
+            width: 139px;
         }
     }
 }
@@ -218,6 +220,15 @@ header{
     border-radius: 20px 20px 0 0;
     margin-top: -25px;
 }
+body > header > a > i{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 35px;
+    top: 23px;
+    font-size: 25px;
+    color: black;
+}
 .restaurant-card{
     position: relative;
     display: -webkit-box;
@@ -267,6 +278,8 @@ header{
 }
 .fa-solid.fa-location-dot{
     padding-right: 15px;
+    position: relative;
+    left: 38px;
 }
 .sec1 h2{
     margin-top: 42px;
@@ -383,11 +396,18 @@ i.fa-regular.fa-heart{
 
 // LES MENUS
 .image-1{
+    height: 90vh;
+    margin-top: 0;
     width: 100%;
-    height: 38vh;
+    height: 309px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+body > header > a > i{
+  margin-top: -9px;
 }
 .logo{
-    width: 52%;
+    width: 30%;
     padding: 15px;
     display: flex;
     margin: 0 auto;
@@ -435,6 +455,8 @@ i.fa-regular.fa-heart{
       transition: 0.5s;
     }
 }
+
+
 body > div > div.menu__sec2 > h2:nth-child(1),#sec1 > div.menu__sec2 > h2:nth-child(1) {
     margin-left: 20px;
     margin-top: 48px;
@@ -644,7 +666,7 @@ footer{
         margin-bottom: 21px;
         &:active .validation__box {
             @include flexbox-center;
-            animation: slide-left 0.5s ease ;
+            animation: slide-left 0.5s ease;
             transform-origin: right;
         }
         &:active .menu__case__price {
@@ -688,17 +710,15 @@ footer{
               transform: scaleX(0);
     }
     100% {
-              transform: scaleX(-50px);
+              transform: scaleX(-50);
     }
   }
 
   @keyframes slides-left {
     0% {
-      -webkit-transform: translateX(0);
               transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(-50px);
               transform: translateX(-50px);
     }
   }
@@ -798,10 +818,11 @@ footer{
         position: absolute;
         left: 35px;
         top: 23px;
-        font-size: 20px;
+        font-size: 25px;
+        color: black;
     }
     body > div > div:nth-child(1) > svg.heart.heart-full-2,body > div > div:nth-child(1) > svg.heart.heart-empty-2{
-        margin-left:  889px ;
+        margin-left: 960px ;
     }
    
     
@@ -810,12 +831,12 @@ footer{
         position: absolute;
         background: #31957c;
         border-radius: 0 15px 15px 0;
-        right: 19%;
+        right: 4%;
         padding: 0 13px;
         height: 100%;
     }
     .dish-and-price {
-        width: 76%;
+        width: 91%;
     }
     .menu__grid__case{
         margin-bottom: 26px;
