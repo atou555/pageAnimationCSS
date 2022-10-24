@@ -560,7 +560,7 @@ body > div > div.menu__sec2 > h2:nth-child(5), #sec1 > div.menu__sec2 > h2:nth-c
         &__price {
             position: relative;
             left: 85%;
-            top: -51px;
+            top: -40px;
             padding-right: 20px;
             font-weight: bold;
             padding-left: 7px;
@@ -581,6 +581,7 @@ div.menu__case__dish-subtitle > p{
     position: absolute;
     top: 38px;
     left: 17px;
+    width: 273px;
 }
 
 .dish-and-price {
@@ -682,10 +683,10 @@ footer{
         }
         .validation__box {
             display: none;
-            position: relative;
+            position: absolute;
             background: $color-tertiary;
             border-radius: 0 15px 15px 0;
-            right: 0px;
+            right: 4%;
             padding: 0 13px;
             height: 100%;
             i {
@@ -701,7 +702,7 @@ footer{
     margin: 0;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 256px;
+    width: 222px;
 }
     
  @keyframes rotate {
@@ -823,9 +824,40 @@ footer{
     .logo {
         width: 114px;
     }
+
+    .menu__case__price {
+        position: relative;
+        left: 88%;
+        top: -40px;
+        padding-right: 20px;
+        font-weight: bold;
+        padding-left: 7px;
+        width: 20px;
+    }
+
+    .menu__grid__case .validation__box {
+        display: none;
+        position: absolute;
+        background: #31957c;
+        border-radius: 0 15px 15px 0;
+        right: 8%;
+        padding: 0 13px;
+        height: 100%;
+    }
 }
 
 @media screen and (min-width:1285px) {
+
+    div.menu__case__dish-subtitle > p {
+        position: absolute;
+        top: 38px;
+        left: 17px;
+        width: 400px;
+    }
+    .menu__grid__case:hover .menu__case__dish p  {
+        width: 295px;
+    }
+
     body > header > a > i{
         width: 50px;
         height: 50px;
