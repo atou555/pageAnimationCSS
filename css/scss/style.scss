@@ -844,10 +844,14 @@ footer{
         padding: 0 13px;
         height: 100%;
     }
+    .menu__grid__case {
+        width: 105%;
+    }
 }
 
 @media screen and (min-width:1285px) {
 
+   
     div.menu__case__dish-subtitle > p {
         position: absolute;
         top: 38px;
@@ -886,6 +890,7 @@ footer{
     }
     .menu__grid__case{
         margin-bottom: 26px;
+        width: 100%;
     }
     .menu__case__price{
         left: 88%;
