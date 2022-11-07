@@ -110,7 +110,7 @@ header{
         height: 49px;
         input{
             width: 146px;
-            border-color: azure;
+            border:none;
             height: 25px;
             background-color: #EAEAEA;
             color: #7a7a7a;
@@ -173,7 +173,8 @@ header{
 
 }
 .categorie-restaurant:hover{
-    @include button-hover;
+    filter: brightness(87%);
+    @include button-hover-2;
     background: lighten(#f7f7f7, 3%);
 }
 .process-number{
@@ -188,6 +189,9 @@ header{
 .process-icon{
     color: #7E7E7E;
     margin: 0 20px;
+}
+.categorie-restaurant:hover .process-icon{
+    color: #c23cc2;
 }
 .sec1{
     display: -webkit-box;
@@ -348,11 +352,11 @@ body > footer > h4:nth-child(4){
 body > footer > h4:nth-child(5){
     margin: 4px 0 0px 19px;
 }
-body > main > div.sec2 > div > a {
+body > main > div.sec2 > div > div > a {
     text-decoration: none;
     color: black;
 }
-body > main > div.sec2 > div > a > div > p {
+body > main > div.sec2 > div > div > a > p  {
     margin: -14px 0 0 18px;
 }
 
@@ -378,7 +382,7 @@ i.fa-regular.fa-heart{
     fill: white;
     cursor: pointer;
   }
-  .heart-full {
+  body > main > div.sec2 > div > div > svg.heart.heart-full {
     position: absolute;
     top: 204px;
     left: 273px;
@@ -396,12 +400,12 @@ i.fa-regular.fa-heart{
     }
 }
 
-.sec2 div:hover{
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: ease 0.4s;
+// .sec2 div:hover{
+//     cursor: pointer;
+//     transform: scale(1.03);
+//     transition: ease 0.4s;
 
-}
+// }
 
 // LES MENUS
 .image-1{
@@ -615,51 +619,56 @@ footer{
     height: 176px;
     color : white;
 }
-.dish-and-price{
-    animation: fadeInAnimation ease 10s; 
+.menu__grid__case{
+    animation: fadeInAnimation ease 5s; 
 }
 @keyframes fadeInAnimation { 
     0% { 
     opacity: 0; 
+    visibility: hidden;
     } 
     100% { 
     opacity: 1; 
     } 
 } 
+// .appears-with-opacity {
+//     -webkit-animation: opacity 1s both;
+//     animation: opacity 1s both;
+// }
 #case-1 {
-    animation-delay: 0.4s;
-}
-
-#case-2 {
-    animation-delay: 0.5s;
-}
-
-#case-3 {
-    animation-delay: 0.6s;
-}
-
-#case-4 {
-    animation-delay: 0.7s;
-}
-
-#case-5 {
     animation-delay: 0.8s;
 }
 
-#case-6 {
+#case-2 {
     animation-delay: 0.9s;
 }
 
-#case-7 {
+#case-3 {
     animation-delay: 1s;
 }
 
-#case-8 {
+#case-4 {
     animation-delay: 1.1s;
 }
 
-#case-9 {
+#case-5 {
     animation-delay: 1.2s;
+}
+
+#case-6 {
+    animation-delay: 1.3s;
+}
+
+#case-7 {
+    animation-delay: 1.4s;
+}
+
+#case-8 {
+    animation-delay: 1.5s;
+}
+
+#case-9 {
+    animation-delay: 1.6s;
 }
  .menu__grid{
     &__case {
@@ -735,6 +744,7 @@ footer{
 
 
 @media screen and (min-width:800px) {
+    // ACCUEIL
     header div:first-child img {
         width: 15%;
         margin-top: 18px;
@@ -821,6 +831,7 @@ footer{
 }
 
 @media screen and (min-width:464px) {
+    // MENU
     .logo {
         width: 114px;
     }
@@ -850,7 +861,7 @@ footer{
 }
 
 @media screen and (min-width:1285px) {
-
+// MENU
    
     div.menu__case__dish-subtitle > p {
         position: absolute;
